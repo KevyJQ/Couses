@@ -1,0 +1,92 @@
+<!--
+Objetives
+	1. Use titles and headings to label information
+	2. Insert text using the paragraph element
+	3. Insert line breaks on a page
+	4. Add links to different sections of a page and other pages
+	5. Create a list of items
+	6. Add a table of data
+	7. Insert an image
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Browser Tab Title -->
+	<title>Example 2</title>
+</head>
+<body>
+	<!-- Adding Text -->
+	<h1>Most Important (and Largest) Heading</h1>
+	<p>This is some text. The content within this paragraph element can be as short or as long as needed.</p>
+
+	<!-- Page Headings -->
+	<h1>Most Important (and Largest) Heading</h1>
+	<h6>Least Important (and Smallest) Heading</h6>
+
+		<!--
+		Using Line Breaks
+
+		This can be useful in many scenarios, such as when writing addresses. You can use the <br> tag to insert a line break in HTML. This is not a container tag and therefore does not have an end tag.
+	-->
+	<p>This is some text that needs to be split up <br>here, <br>here, and <br>here.</p>
+
+	<!-- Add links to Other Pages -->
+	<a href="https://www.ibm.com">IBM</a>
+
+	<a href="https://www.ibm.com" target="_blank">IBM</a>
+
+
+	<a href="#">Top of Page</a>
+	<a href="#top">Top of Page</a>
+
+	<a href="#section">Link to section</a>
+	<!-- ... -->
+	<h1 id="section">Section</h1>
+
+	<!-- Create list -->
+	<!-- Unordered List -->
+	<ul>
+		<li>This is a bullet point </li>
+		<li>The items in this list have no particular order </li>
+		<li>Each item will appear as a bullet, rather than a number </li>
+	</ul>
+	<!-- Ordered List -->
+	<ol>
+		<li>This is an ordered list </li>
+		<li>The items in this list have a particular order </li>
+		<li>Each item will be numbered, starting from 1 </li>
+		<li>This is the fourth point in the list </li>
+	</ol>
+
+	<!-- Add a table -->
+	<table>
+		<tr>
+			<th>Heading 1</th>
+			<th>Heading 2</th>
+			<th>Heading 3</th>
+		</tr>
+		<tr>
+			<td>H1 - Data Item 1</td>
+			<td>H2 - Data Item 1</td>
+			<td>H3 - Data Item 1</td>
+		</tr>
+		<tr>
+			<td>H1 - Data Item 2</td>
+			<td>H2 - Data Item 2</td>
+			<td>H3 - Data Item 2</td>
+		</tr>
+		<tr>
+			<td>H1 - Data Item 3</td>
+			<td>H2 - Data Item 3</td>
+			<td>H3 - Data Item 3</td>
+		</tr>
+	</table>
+
+	<!-- Add a Image -->
+	<!-- External Image -->
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/440px-IBM_logo.svg.png" alt="IBM Logo" width="300" height="300">
+	<!-- Local Images -->
+	<img src="images/IBMlogo.png" alt="IBM Logo" width="300" height="300">
+	
+</body>
+</html>

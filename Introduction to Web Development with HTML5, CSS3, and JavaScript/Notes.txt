@@ -1,0 +1,43 @@
+<spript>
+	- tag or within a separate file, which is called in the html code
+	- Provide an interactive user experience
+	- Use for various tasks, such as:
+		- Form validation
+		- Dynamic content changes
+		- Image manipulation
+
+head
+	- Return the head element
+
+title
+	- Set returns the litle the document
+
+Images 
+	- Return an HTMLCollection of the img elements in the document
+
+lastModifiel
+	- Return the date of the last modification to the document
+
+scripts
+	- Return an HTMLCollection of the script elements in the document
+
+-------------------------------------------------------------------
+
+
+getElementById('id')
+	- Accesses the firts element with specific id
+
+getELementsByTagName('tag')
+	- Return a nodelist of all elements with the specified HTML tag name
+
+open()
+	- Open an output stream to collect the output from document writen()
+
+write()
+	- Writes JavaScript code th the document
+
+close()
+	- Closes the output stream previously opened with document open()
+
+-------------------------------------------------------------------
+

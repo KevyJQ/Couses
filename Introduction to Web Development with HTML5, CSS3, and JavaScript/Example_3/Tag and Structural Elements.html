@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sample Page</title>
+</head>
+<body>
+	<div>
+		<h1>This is a heading in a div element</h1>
+		<p>This is some text in a div element.</p>
+	</div>
+
+	<!--Structural HTMLS5 Elements -->
+
+	<!-- The "section" element is used to group content in a more specific way than the <div> tag. The content within a <section> element is grouped in a semantically meaningful way, that is, there is a reason, other than for styling purposes for putting the content together. -->
+		<section>
+			<h1>Section 1</h1>
+			<p>This is text related to section 1.</p>
+		</section>
+		<section>
+			<h1>Section 2</h1>
+			<p>This is some text related to section 2.</p>
+		</section>
+
+		<!-- An <article> element is even more specific than a <section>tag. It is used to group together semantically related, self-contained content which can be meaningful on its own. Similar to the <section> element, articles usually have headings immediately after their opening tag to indicate what the article is about.-->
+			<article>
+				<h1>Article 1</h1>
+				<p>This paragraph is related only to article one and is meaningful on its own, without the rest of the code.</p>
+			</article>
+			<article>
+				<h1>Article 2</h1>
+				<p>This paragraph is related only to article two and is meaningful on its own, without the rest of the code.</p>
+			</article>
+
+		</body>
+		-----------------------------------------------------------
+		<body>
+			<article>
+				<header>
+					<h1>G8 summit protests</h1>
+				</header>
+				<div>
+					<section id="public">
+						<h1>Public demonstrations</h1>
+						<p>...more...</p>                
+					</section>
+					<section id="control">
+						<h1>Crowd control</h1>
+						<p>...more...</p>                
+					</section>            
+				</div>
+				<footer>
+					<p>Published today.</p>
+				</footer>
+			</article>
+		</body>
+		-----------------------------------------------------------
+	<!-- Aside 
+	The <aside> element is used to provide additional information that is related to the main discussion​. It lets you display further content or additional resources without detracting from the main discussion​, and is often placed as a sidebar in a document.
+	-->
+	<body>
+		<h2>Aside</h2>
+		<p>This is a paragraph of text that casually mentions a concept and continues explaining the main point</p>
+		<aside>
+			<h4>Concept Definition</h4>
+			<p>This goes over the concept mentioned in the paragraph to provide readers with further explanation if needed. However, it does not detract from the main content.</p>
+		</aside>
+		-----------------------------------------------------------
+
+		<h2>fiture</h2>
+		<!-- The <figure> tag defines self-contained content, such as a diagram or photo, that is referred to from the main content​. The content within the <figure> element should be related to the main content, but still independant in such a way that if removed from the document, it would not affect the flow.-->
+
+			<figure>
+				<img src="fondo2.jpg" width="500" height="500"/>
+				<figcaption>FNo. 2</figcaption>
+			</figure>
+			--------------------------------------------------------
+			<h2>Navigation Elements</h2>
+		<!--
+	The <nav> element is used as a way to group navigational elements which are used to move between pages, such as the navigation bar typically found at the top of websites.
+	-->
+	<nav>
+		<div class="menu">
+			<a href="#">Home</a> |
+			<a href="about.html">About</a> |
+			<a href="register.html">Register</a> |
+			<a href="#">Sign in</a>
+		</div>
+	</nav>
+	-----------------------------------------------------------
+	<h2>Embedding Content</h2>
+	<h3>Audio</h3>
+	<!--
+		The <audio> element is used to embed sound content, such as music or podcasts. It contains one or more <source> tags with different audio sources (e.g. MP3, WAV), so the browser can select the first supported source to play.
+	-->
+	<audio>
+	  <source src="soundtrack.mp3" type="audio/mpeg">
+	  <source src="soundtrack.ogg" type="audio/ogg">
+	  Your browser does not support the audio formats provided.
+	</audio>
+		
+
+
+		-----------------------------------------------------------
+		<h2>Canvas</h2>
+		<!--
+		The <canvas> element is used to draw graphics via scripting. JavaScript is one way to utilize scripting to draw these graphics, as shown in the example below.
+		-->
+		<canvas>
+   			Your browser does not support the canvas tag.
+		</canvas>
+		<script>
+		    var canvas = document.getElementsByTagName("canvas")[0];
+		    var context = canvas.getContext("2d");
+		    context.fillRect(0, 0, 100, 100);
+		</script>
+
+		-----------------------------------------------------------
+		<h2>Embed</h2>
+		<div>
+			<p>The <embed> element is used as a container to embed external resources such as media players and plug-in applications into your web page.The <embed> element is used as a container to embed external resources such as media players and plug-in applications into your web page.</p>
+		</div>
+		<h3>Example</h3>
+		<dir>
+			<embed type="text/html" src="another_webpage.html">
+		</dir>
+		-----------------------------------------------------------
+
+		<h2>Track</h2>
+		<div>
+			<p>
+				The <track> element defines text tracks, such as subtitles or captions, for <audio> and <video> elements. This text should be visible as the related media source it playing, and are formatted in the WebVTT (.vtt) format.
+			</p>
+		</div>
+		<h3>Example</h3>
+		<div>
+			<video>
+			  <source src="common_html_elements.mp4" type="video/mp4">
+			  <track src="english_subtitles.vtt" kind="subtitles" srclang="en" label="English">
+			  <track src="spanish_subtitles.vtt" kind="subtitles" srclang="es" label="Spanish">
+			</video>
+		</div>
+
+	</body>
+</html>
+

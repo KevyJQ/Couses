@@ -1,0 +1,155 @@
+/* sets the margin of all the element to 10px on all sides*/
+{
+    margin: 10px;
+}
+/* Home section  which has the app name and nav bar. The styling is applied by id */
+#home {
+    background-color:  #483355;
+    padding-bottom: 1cm;
+    margin-left: -1cm; /*Izquierda*/
+    margin-right:-1cm;  /*Derecha*/
+    margin-top:-2cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+}
+#home2 {
+    /*De que color queremos nuestro fondo*/
+    background-color:  blueviolet;
+    /*Que tan ancho queremos que sea nuestro espacio*/
+    padding-bottom: 2cm;
+    /* Limite de lado izquierdo */
+    margin-left: -1cm;
+    /* Limite de lado derecho */
+    margin-right: -1cm;
+    /* Dentro de una seccion, podemos jugar con la posicion 
+    de forma verticar */
+    margin-top: -3.5cm;
+}
+/* Container for all the three conversion calculator sections   */
+#all-conversion-sections{
+    display: flex;
+    justify-content: space-between;
+}
+/* Navigation Bar Container*/
+.topdiv {
+    float: left;
+    padding-right: 1cm;
+    margin-top: -0.2cm;
+    margin-left: 21cm;
+}
+
+/* Navigation Bar Buttons */
+.topmenu {
+    color: ghostwhite;
+    background-color:   #483355;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration:none;
+    border-radius: 1mm;
+}
+
+.topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: #382742;
+    text-decoration: underline;
+}
+/* The calculator panel */
+.b{
+    /* Limita la linea seperior */
+    border-top-style: solid;
+    /* El damos el ancho que deseemos */
+    border-top-width: 30px;
+    /* Le asigna un fondo a la seccion */
+    background-color: white;
+    /* Delimitamos el tamaño de nuestros contornos laterales  */
+    width: 600px;
+    /* Delimitamos el tamaño de nuestro contorno superior e inferior */
+    height: 400px;
+    /* Le damos contorno circular a nuestras esquinas */
+    border-radius: 30px;
+    margin-top: 70px;
+    display: flex;
+}
+.temperature{
+    border-top-color: orangered;
+}
+.weight{
+    border-top-color: coral;
+}
+.distance{
+    border-top-color: cyan;
+}
+
+.iconbutton img {
+    width: 30px
+}
+.imgcasa{
+    margin-left: 0.5cm;
+    margin-top: 1cm;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+}
+body{
+    background-color: black;
+}
+/* Application name inside the home section. The styling is applied by tag name */
+header {
+    /* El tamaño de la letra  */
+    font-size: 150px;
+    /* El color */
+    color: rgb(255,0,255);
+    float: center;
+    padding-left: 15cm;
+
+}
+fieldset{
+    margin: 20px;
+    margin-top: 1.5cm;
+    text-align: center;
+}
+
+aside{
+    /* Alinea el texto */
+    text-align: center;
+    /* Le da un espacio de lado derecho */
+    margin-right: 20px;
+}
+figure {
+    float:left; 
+    justify-self: auto; 
+    width:200px
+}
+img {
+    /* tamaño de nuestra imagen  */
+    width: 250px;
+    margin-top: 1cm;
+    margin-left: -0.5cm;
+}
+figcaption {
+    color:black;
+    font-size: 17px;
+    text-align: center;
+}
+button{
+    font-size: 20px;
+    border: transparent;
+    width: fit-content;
+    background-color: rgb(173, 218, 173);
+    border-radius: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+button:hover {
+    cursor: pointer;
+}
+legend {
+    font-size: 30px;
+    font-weight: bolder;
+}
+footer {
+    background-color:rgb(240, 234, 245);
+    margin-top: 20px;
+}
