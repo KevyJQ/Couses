@@ -41,3 +41,16 @@ close()
 
 -------------------------------------------------------------------
 
+JavaScript
+
+$ var age;
+$ var age = 54;
+
+var keyword:
+	- If not assigned a value, it is undefined
+	- Javascript reads var as a numeric or string variable based on the value assigned
+	- JavaScript does not assig a zero or an empty string value
+
+<script>
+	//Javascript code
+</script>
