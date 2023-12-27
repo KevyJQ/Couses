@@ -1,0 +1,89 @@
+body{
+	background: black;	/* Fondo de la pagina completa */
+	font-family: Verdana;	/* Tipo de letra */
+	font-weight: bold;	/* Poner las letras en negritas */
+	color: black;	/* Color de la letra */
+	margin: 15px;
+}
+header,nav,aside,footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header{
+	background: red;	/* Crea un borde de grosor de 3, solido y color negro */
+	width: 100%;
+	height: 100px;
+	border: 5px solid whitesmoke;
+	border-radius: 10px;
+}
+nav	{
+	background: blueviolet;
+	width: 100%;
+	height: 100px;
+	border: 5px solid whitesmoke;
+	border-radius: 10px;
+}
+main{
+	background: black;
+	/* Le decimos que ocupe todo el ancho de la ventana del navegador */
+	width: 100%;
+	/* Lo que realizamos al poner calc() es que calcule el espacio que hace falta para completar toda la pagina
+	Al nosotros poner 100vh: significa que queremos que rellene el espacio visible de la ventana del navegador 
+	Y despues le decimos que a ese espacio le reste los 300px que ya estamos ocupando con el header y el nav  */
+	height: calc(100vh - 290px);
+	/* Lo que hace es que en vez de apilarse de forma vertical, se puedan apilar de forma vertical */
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+
+}
+section{
+	background: grey;
+	width: 49%;
+	height: 100%;
+	border: 5px solid whitesmoke;
+	border-radius: 10px;
+	/* El elemento se comporta como un elemento en línea con un ancho definido */
+	display: inline-block;
+}
+aside{
+	background: yellow;
+	width: 49%;
+	height: 100%;
+	border: 5px solid whitesmoke;
+	border-radius: 10px;
+}
+
+article{
+	background: aqua;
+	width: 85%;
+	height: 80%;
+	border: 5px solid whitesmoke;
+	border-radius: 10px;
+	display: inline-block;
+	/* Se ajusta automaticamnete al margen del contenedor */
+	margin: auto;
+}
+footer{
+	background: orange;
+	width: 100%;
+	height: 100px;
+	border: 5px solid whitesmoke;
+	border-radius: 10px;
+}
+p{
+	font-size: 30px;
+}
+figure{
+	background: purple;
+	border: 3px solid whitesmoke;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 75%;
+	margin: auto;
+}
