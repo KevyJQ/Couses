@@ -1,0 +1,19 @@
+body{
+	background-color: black;
+	font-family: arial;
+	color: white;
+}
+h1{
+	color: blueviolet;
+	font-family: verdana;
+}
+.maindiv{
+	background-color: whitesmoke;	/* Color del fondo del contenedor */
+	height: 290px;	/* Altura del espacio */
+	width: 350px;	/* Ancho del espacio */
+	color: black;	/*Color de las letras*/
+	border-radius: 25px;	/* Redondeamos las esquinas */
+	text-align: center;	/* Alinia el texto al centro */
+	padding: 30px;	/* Estable el espacio entre un elemento y el borde */
+
+}
