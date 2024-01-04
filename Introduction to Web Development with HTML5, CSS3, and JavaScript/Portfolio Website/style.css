@@ -1,0 +1,76 @@
+body{
+	background: black;
+	margin: 10px;
+	font-family: Courier;
+}
+
+.encabezado,.self,.skills{
+	background: aqua;
+	border: 10px double blueviolet;
+	border-radius: 15px;
+}
+.imgdiv,.self,.encabezado,.cv,.dates,
+.img-self,.description{
+	display: flex;
+}
+.description,.cv,.img-self,.description{
+	justify-content: center;
+	align-items: center;
+}
+.encabezado{
+	padding: 15px;
+}
+.cv{
+	padding: 10px;
+	font-size: 150px;
+}
+.dates{
+	flex-direction: column;
+	width: 30%;
+	padding-left: 10px;
+}
+.imgEnc{
+	width: 45px;
+	height: 40px;
+	padding-right: 10px;
+}
+.opciones{
+	margin: auto;
+}
+.button{
+	background-color: aqua;
+	justify-content: space-between;
+	padding: 5px;
+	border: 2px solid blueviolet;
+	border-radius: 10px;
+}
+.img-self{
+	width: 50%;
+	height: 50%;
+}
+.img-self-1{
+	width: 50%;
+	height: 50%;
+}
+.description{
+	flex-direction: column;
+}
+.title-skills{
+	text-align: center;
+	font-size: 40px;
+}
+.cubeSkills{
+	display: flex;
+	margin: 15px;
+}
+.cube{
+	margin: auto;
+	width: 25%;
+	height: fit-content;
+	text-align: center;
+}
+.cubeimg{
+	width: 100%;
+	height: 100%;
+}
+
