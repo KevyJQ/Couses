@@ -1,0 +1,74 @@
+*{
+	font-family: 'Inter', sans-serif;
+	color: #fff;
+}
+body{
+	margin: 0;
+	background: #224878;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.calculadora{
+	/* Nos va a permitir modificar nuestros espacios */
+	display: grid;
+	/* Con esto le decimos que cada 4 columnas se salte y continue abajo y tenga un ancho(horizantal) de 75px*/
+	grid-template-columns: repeat(4, 75px);
+	/* Realiza la misma funcion de la de arriba solo que ahora se aplica a lo alto(vertical) */
+	grid-template-rows: 160px repeat(5, 75px);
+	background-color: #00916e;
+	padding: 15px;
+	border-radius: 32px;
+	/* Le damos la sombra, el 15px significa en el eje de las 'X', el 10px en el eje de las 'Y', el 0px en el eje 'Z' y los 5px es que tan grande queremos que se nuestra sombra y por ultimo seleccionamos el color*/
+	box-shadow: 15px 10px 0px 5px #00000033;
+	border: 3px solid black;
+}
+button{
+	cursor: pointer;
+	margin: 5px;
+	padding: 0;
+	border-radius: 32px;
+	font-size: 1.5em;
+	border: none;
+	background-color: #00916e;
+	box-shadow: 5px 5px 10px 3px #00000040;
+}
+/* Hace una animacion cuando presionamos el botton  */
+button:active {
+	background-color: seagreen;
+	border: 3px solid black;
+}
+button:focus {
+	outline: none;
+}
+
+.display{
+	/* Le decimos que vaya desde una punta hasta la otra  */
+	grid-column: 1 / -1;
+	padding: 16px;
+	display: flex;
+	margin: 10px 10px 20px;
+	flex-direction: column;
+	align-items: flex-end;
+	background-color: #424949;
+	border-radius: 32px;
+	text-align: right;
+	justify-content: space-between;
+	/* Lo ponemos en dado caso que el espacio del numero sea mayor al permitido y se coloque en el espacio de abajo */
+	word-break: break-all;
+	box-shadow: 0px 0px 0px 10px #00000033;
+}
+.col-2{
+	grid-column: span 2;
+}
+
+#valor-actual{
+	font-size: 1.5em;
+}
+#valor-anterior{
+	font-size: 2em;
+}
