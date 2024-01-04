@@ -1,3 +1,18 @@
+Algunas paginas web que te pueden ayudar a diseñar tu pagina web son las siguientes:
+
+- Formato y alineaciones	
+	- https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
+	- https://lenguajecss.com/css/maquetacion-y-colocacion/propiedad-display/
+- Colores
+	- https://www.color-hex.com/color/ffffff
+- Fuentes de letras
+	- https://www.hostinger.es/tutoriales/mejores-fuentes-html
+- Propiedades del texto
+	- https://www.eniun.com/atributos-propiedades-textos-css/
+- Imagenes e iconos
+	- https://www.flaticon.es/resultados?word=CV
+
+
 <spript>
 	- tag or within a separate file, which is called in the html code
 	- Provide an interactive user experience
@@ -54,3 +69,4 @@ var keyword:
 <script>
 	//Javascript code
 </script>
+
